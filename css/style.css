@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+span {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+
+    100% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+}
